@@ -1,29 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Put the name of the business and contact form  here</title>
+<title>Briseno's Bed and Breakfast </title>
 <meta charset="utf-8">
-<link href="styles.css" rel="stylesheet">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="static/css/styles.css" rel="stylesheet">
 </head>
 <body>
-<div id="wrapper">
   <header>
-      <img src="images/logo.png" width="200" height="auto" alt="logo">
+      <div id="logoshow">
+        <img src="static/images/logo.png" width="200" height="auto" alt="logo">
+      </div>
       <h1>Briseno's Bed and Breakfast</h1>
   </header>
   <nav>
   <ul> 
     <li><a href="index.html">Home</a></li>
-	  <li><a href="rooms/lookoutsuite.html">Lookout Suite</a></li>
-	  <li><a href="rooms/standardroom.html">Standard Rooms</a></li>
-	  <li><a href="events/dailybreakfast.html">Daily Breakfast</a></li>
-	  <li><a href="contact.html">Contact</a></li>
+	<li><a href="rooms/lookoutsuite.html">Lookout Suite</a></li>
+	<li><a href="rooms/standardroom.html">Standard Rooms</a></li>
+	<li><a href="dailybreakfast.html">Daily Breakfast</a></li>
+	<li><a href="contact.html">Contact</a></li>
   </ul>
   </nav>
   <main>
-  <h3>Contact form </h3>
-  
+  <h2>Rate your experience: </h2>
+  <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+    <div class="ratingitem">
+      <label for="5Star">5 Stars</label>
+        <input type="radio" name="myStar" id="5Star" required>
+    </div>
+    <div class="ratingitem">
+      <label for="4Star">4 Stars</label>
+        <input type="radio" name="myStar" id="4Star">
+    </div>
+    <div class="ratingitem">
+      <label for="3Star">3 Stars</label>
+        <input type="radio" name="myStar" id="3Star">
+    </div>
+    <div class="ratingitem">
+      <label for="2Star">2 Stars</label>
+        <input type="radio" name="myStar" id="2Star">
+    </div>
+    <div class="ratingitem">
+      <label for="1Star">1 Stars</label>
+        <input type="radio" name="myStar" id="1Star">
+    </div>
+    <div class="textitem">
+      <Label for="myQuestion">Additional Comments and Questions: </Label>
+      <textarea name="myQuestion" id="myQuestion"></textarea>
+    </div>
+    <div class="textitem">
+      <label for="myEmail">Enter Email here: </label>
+      <input type="email" name="myEmail" id="myEmail" required>
+    </div>
+    <input type="submit" value="Submit">
+    
+  </form>
   </main>
   <footer>
     Copyright &copy; 2025 <br>
