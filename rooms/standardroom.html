@@ -25,19 +25,26 @@
   <main>
     <h2>Standard Room</h2>
     <p>Enjoy our standard room with the option of one or two queen-size beds. All rooms also include HD Television with 100 channels, free Wifi, and a microwave.</p>
-    <img src="../static/images/bed1.jpg" width="200px" height="auto" alt="room">
+    <img src="../static/images/bed1.jpg" class="roomimg" width="200px" height="auto" alt="room">
     <h2>Prices</h2>
     <ul>
-      <li>Standard Room with Premium Room Service(One Bed): $40.00</li>
-      <li>Standard Room with Premium Room Service(Two Beds): $45.00</li>
-      <li>Standard Room without Premium Room Service(One Bed): $30.00</li>
-      <li>Standard Room without Premium Room Service(Two Beds): $35.00</li>
+      <li id="price1">Standard Room with Premium Room Service(One Bed): $40.00</li>
+      <li id="price2">Standard Room with Premium Room Service(Two Beds): $45.00</li>
+      <li id="price3">Standard Room without Premium Room Service(One Bed): $30.00</li>
+      <li id="price4">Standard Room without Premium Room Service(Two Beds): $35.00</li>
     </ul>
-
+    <div id="xmasscroll">
+    <a href="#" onclick="document.getElementById('price1').innerHTML = 'Standard Room with Premium Room Service(One Bed): <s>$40.00</s> $30.00',document.getElementById('price2').innerHTML = 'Standard Room with Premium Room Service(Two Beds): <s>$45.00</s> $33.75',document.getElementById('price3').innerHTML = 'Standard Room without Premium Room Service(One Bed): <s>$30.00</s> $22.50',document.getElementById('price4').innerHTML = 'Standard Room without Premium Room Service(Two Beds): <s>$35.00</s> $26.25'">
+    <marquee><img src="../static/images/xmasdeal.png" alt="xmas deal alert 25% off."><img src="../static/images/xmasdeal2.png" alt="xmas deal click alert ."></marquee>
+    </a>
+    </div>
   </main>
   <footer>
     Copyright &copy; 2025 <br>
     <a href="mailto:your_dnbriseno@amarillocollege.com">Divinity Briseno</a>
+      <script>
+        document.write("Last Modified: " + document.lastModified)
+      </script>
   </footer>
 </body>
 </html>

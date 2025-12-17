@@ -6,6 +6,10 @@
 #logoshow{
        display: none;
 }
+.roomimg{
+       border-radius: 1rem;
+       border: 2px dashed #90745D;
+}
 body { background-image: url(../images/background.png);
        background-color: #cbf480;
        background-repeat: no-repeat;
@@ -26,7 +30,7 @@ nav {
        display: flex;
        flex-direction: column;
        align-items: center;
-       background-color: #90745D; 
+       background-image: linear-gradient(to bottom,#90745d,#6b513c); 
        border: 2px dashed #FFFFCC;
 }
 nav ul {
@@ -48,14 +52,14 @@ nav a:hover { color: #cbf480; border-bottom: 2px dashed #cbf480;}
 
 main { 
        padding: 1rem;
-       background-color: #FFFFCC;
+       background-image: linear-gradient(to bottom,#FFFFCC,#fff1b9);
        border: 2px dashed #90745D;
 }
 footer {
        display: flex;
        flex-direction: column;
        align-items: center; 
-       background-color: #FFFFCC;
+       background-image: linear-gradient(to bottom,#FFFFCC,#fff1b9);
        padding: 1rem;
        
        border-bottom: 2px dashed #90745D;
@@ -107,12 +111,16 @@ ul{
 @media (min-width: 600px){
        nav{
               margin:0 5rem;
+              border-top-left-radius: 1rem;
+              border-top-right-radius: 1rem;
        }
        main{
               margin:0 5rem;
        }
        footer{
               margin: 0 5rem 1rem;
+              border-bottom-left-radius: 1rem;
+              border-bottom-right-radius: 1rem;
        }
 }
 
@@ -134,20 +142,24 @@ ul{
                      grid-area: header;
                      flex-direction: row;
                      justify-content: center;
+                     
 
               }
               nav{
                      grid-area: nav;
                      margin: 0;
+                     border-radius: 1rem;
               }
               main{
                      grid-area: main;
                      margin: 0;
+                     border-radius: 1rem;
               }
               footer{
                      grid-area: footer;
                      margin:0;
                      border: 2px dashed #90745D;
+                     border-radius: 1rem;
               }
        }
        #logoshow{ display: inline;

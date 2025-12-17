@@ -25,19 +25,27 @@
   <main>
     <h2>Lookout Suite</h2>
     <p>The Lookout Suites are a premium set of rooms on the top floor with their very own balconies. Enjoy the sweet view from your hotel room!</p>
-    <img src="../static/images/lookoutsuite1.jpg" width="200px" height="auto" alt="balcony">
+    <img src="../static/images/lookoutsuite1.jpg" class="roomimg" width="200px" height="auto" alt="balcony">
     <h2>Prices</h2>
-    <ul>
-      <li>Lookout Suite with Premium Room Service(One Bed): $70.00</li>
-      <li>Lookout Suite with Premium Room Service(Two Beds): $75.00</li>
-      <li>Lookout Suite without Premium Room Service(One Bed): $60.00</li>
-      <li>Lookout Suite without Premium Room Service(Two Beds): $65.00</li>
+    <ul class="pricelist">
+      <li id="price1">Lookout Suite with Premium Room Service(One Bed): $70.00</li>
+      <li id="price2">Lookout Suite with Premium Room Service(Two Beds): $75.00</li>
+      <li id="price3">Lookout Suite without Premium Room Service(One Bed): $60.00</li>
+      <li id="price4">Lookout Suite without Premium Room Service(Two Beds): $65.00</li>
     </ul>
-    <img src="../static/images/lookoutsuite2.jpg" width="200px" height="auto" alt="lookout suite room">
+    <div id="xmasscroll">
+    <a href="#" onclick="document.getElementById('price1').innerHTML = 'Lookout Suite with Premium Room Service(One Bed): <s>$70.00</s> $52.50',document.getElementById('price2').innerHTML = 'Lookout Suite with Premium Room Service(Two Beds): <s>$75.00</s> $56.25',document.getElementById('price3').innerHTML = 'Lookout Suite without Premium Room Service(One Bed): <s>$60.00</s> $45.00',document.getElementById('price4').innerHTML = 'Lookout Suite without Premium Room Service(Two Beds): <s>$65.00</s> $48.75'">
+    <marquee><img src="../static/images/xmasdeal.png" alt="xmas deal alert 25% off."><img src="../static/images/xmasdeal2.png" alt="xmas deal click alert ."></marquee>
+    </a>
+    </div>
+    <img src="../static/images/lookoutsuite2.jpg" class="roomimg" width="200px" height="auto" alt="lookout suite room">
   </main>
   <footer>
     Copyright &copy; 2025 <br>
     <a href="mailto:your_dnbriseno@amarillocollege.com">Divinity Briseno</a>
+      <script>
+        document.write("Last Modified: " + document.lastModified)
+      </script>
   </footer>
 </div>
 </body>
