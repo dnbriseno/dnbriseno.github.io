@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="css/styles.css" rel="stylesheet">
-
+<script src="scripts/costestimate.js" defer></script>
 </head>
 <!--body section-->
 <body>
@@ -26,15 +26,46 @@
 	<li><a href="contact.html">Contact</a></li>
   </ul>
   </nav>
-<!--Main section-->
- <main>
- <h2> Welcome to Briseno's Bed and Breakfast</h2>
 
-  <p> Here at Briseno's Bed and Breakfast, we have many quality hotel rooms that can be booked. Enjoy our rooms with an option of quality room service.</p>
-  <img src="images/hall.jpg" class="roomimg" alt="alt text here" width="350" height="200">
-  
+  <!--Main section-->
+  <main>
+
+      <h2>Cost Estimation</h2>
+      <form>
+        <fieldset>
+
+            <legend><span>Room types</span></legend>
+
+              <p>Lookout Suite - $60</p>
+              <input type="checkbox" id="lksuite" />
+               <label for="lksuite">
+               </label>
+               
+              <p>Standard Room - $30</p>
+              <input type="checkbox" id="stanroom" />
+               <label for="stanroom">
+               </label>
+
+              <p># of days stayed</p>
+                <input type="number" min="1"  id="dayNum" />
+               <label for="dayNum">
+               </label>
+
+              <p>Premium Room service</p>
+              <p>Adds $5 Daily</p>
+              <input type="checkbox" id="prroomservice" />
+               <label for="prroomservice"></label>
+        </fieldset>
+      </form>
+
+      <h2>Total Cost: </h2>
+      <div id="totalcost">
+        
+      </div>
+
   </main>
-<!--footer section-->
+
+  <!--Footer-->
   <footer>
     Copyright &copy; 2025 <br>
     <a href="mailto:your_dnbriseno@amarillocollege.com">Divinity Briseno</a>
@@ -44,5 +75,3 @@
       </script>
     </div>
   </footer>
-</body>
-</html>
