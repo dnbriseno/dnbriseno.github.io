@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/common.js"></script>
+    <script src="scripts/cart.js"></script>
+</head>
+<body onload="renderCart()">
+  <header>
+      <div id="logoshow">
+        <img src="images/logo.png" width="200" height="auto" alt="logo">
+      </div>
+      <h1>Briseno's Bed and Breakfast</h1>
+  </header>
+  <nav>
+  <ul> 
+    <li><a href="index.html">Home</a></li>
+	<li><a href="rooms/lookoutsuite.html">Lookout Suite</a></li>
+	<li><a href="rooms/standardroom.html">Standard Rooms</a></li>
+	<li><a href="dailybreakfast.html">Daily Breakfast</a></li>
+  <li><a href="costestimate.html">Cost Estimation</a></li>
+  <li><a href="reviews.html">Reviews</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="shop.html">Gift Shop</a></li>
+	<li><a href="contact.html">Contact</a></li>
+  </ul>
+  </nav>
+
+ <main class="container">
+    <section class="intro-card">
+        <h2>Shopping Cart</h2>
+        <p>You can change quantity, size, and color here. The total updates automatically.</p>
+    </section>
+
+    <section id="cart-area" class="cart-card"></section>
+
+    <div class="total-box">
+        <strong>Total: $</strong><span id="total-box">0.00</span>
+    </div>
+                <nav class="nav-links">
+                <a class="nav-button" href="shop.html">Storefront</a>
+                <a class="nav-button" href="shipping.html">Shipping Page</a>
+            </nav>
+</main>
+</body>
+</html>
